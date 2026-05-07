@@ -412,15 +412,33 @@ section{padding:6rem 2rem;}
   font-size:0.9rem;color:var(--text-mid);
   line-height:2.1;margin-bottom:1.8rem;
 }
-.owner-tags{
-  display:flex;flex-wrap:wrap;gap:0.6rem;
+.owner-hobbies{
   margin-bottom:2rem;
-}
-.owner-tags span{
+  padding:1.4rem 1.6rem;
   background:var(--pink-light);
-  color:var(--text-mid);
-  font-size:0.78rem;padding:0.4rem 1rem;
-  border-radius:2rem;letter-spacing:0.04em;
+  border-left:2px solid var(--caramel);
+}
+.owner-hobbies-label{
+  display:block;
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;font-size:0.9rem;
+  color:var(--caramel);letter-spacing:0.08em;
+  margin-bottom:0.8rem;
+}
+.owner-hobbies-list{
+  list-style:none;
+  display:flex;flex-direction:column;gap:0.5rem;
+}
+.owner-hobbies-list li{
+  font-size:0.84rem;color:var(--text-mid);
+  line-height:1.7;padding-left:1rem;
+  position:relative;
+}
+.owner-hobbies-list li::before{
+  content:'';
+  position:absolute;left:0;top:0.6em;
+  width:4px;height:4px;
+  background:var(--caramel);border-radius:50%;
 }
 .owner-profile-items{display:flex;flex-direction:column;gap:1.4rem;}
 .owner-profile-item{}
@@ -829,19 +847,21 @@ footer{background:#fff;border-top:1px solid var(--border);padding:3.5rem 2rem 0;
     <h2 class="sec-title">オーナー紹介</h2>
     <div class="owner-grid">
       <div class="owner-img">
-        <img src="owner.jpg" alt="オーナー 繰繰由紀">
+        <img src="owner.jpg" alt="オーナー 纐纈由紀">
         <div class="owner-name-card">
           <span class="owner-name-en">YUKI KOKETSU</span>
-          <span class="owner-name-ja">繰繰 由紀</span>
+          <span class="owner-name-ja">纐纈 由紀</span>
         </div>
       </div>
       <div class="owner-content">
-        <p class="owner-lead">名古屋市天白区在住。夫と愛犬との三人暮らし。<br>40代、毎日があっという間に過ぎていくのを実感しながら、だからこそ「今この時間」を大切にしたいと思っています。</p>
-        <div class="owner-tags">
-          <span>🌺 フラダンス好き</span>
-          <span>🌸 ハワイ渡航歴4回</span>
-          <span>☕ カフェ・空間好き</span>
-          <span>🥩 おひとりさま焼肉OK</span>
+        <p class="owner-lead">名古屋市天白区在住。40代、毎日があっという間に過ぎていくのを実感しながら、だからこそ「今この時間」を大切にしたいと思っています。</p>
+        <div class="owner-hobbies">
+          <span class="owner-hobbies-label">好きなこと</span>
+          <ul class="owner-hobbies-list">
+            <li>フラダンス — 踊るのも観るのも好き</li>
+            <li>ハワイ — 渡航歴4回、現地の空気を吸うだけで生き返ります</li>
+            <li>カフェ巡り — 味はもちろん、空間の心地よさを大切に</li>
+          </ul>
         </div>
         <div class="owner-profile-items">
           <div class="owner-profile-item">
