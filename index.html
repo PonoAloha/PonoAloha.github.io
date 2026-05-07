@@ -375,6 +375,68 @@ section{padding:6rem 2rem;}
 }
 .future-desc{font-size:0.78rem;color:var(--text-light);line-height:1.8;}
 
+/* ===== OWNER ===== */
+.owner{background:#fff;}
+.owner-grid{
+  display:grid;grid-template-columns:1fr 1.5fr;
+  gap:5rem;align-items:start;
+}
+.owner-img{position:relative;}
+.owner-img img{
+  width:100%;aspect-ratio:4/5;
+  object-fit:cover;object-position:center top;
+  box-shadow:0 8px 32px rgba(0,0,0,0.1);
+}
+.owner-name-card{
+  position:absolute;bottom:-1.5rem;right:-1.5rem;
+  background:#fff;
+  padding:1.2rem 1.8rem;
+  box-shadow:0 4px 20px rgba(0,0,0,0.08);
+  text-align:center;
+}
+.owner-name-en{
+  display:block;
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;font-size:0.85rem;
+  color:var(--caramel);letter-spacing:0.1em;
+  margin-bottom:0.3rem;
+}
+.owner-name-ja{
+  display:block;
+  font-family:'Noto Serif JP',serif;
+  font-size:1.1rem;color:var(--text);
+  letter-spacing:0.08em;
+}
+.owner-content{padding-top:1rem;}
+.owner-lead{
+  font-size:0.9rem;color:var(--text-mid);
+  line-height:2.1;margin-bottom:1.8rem;
+}
+.owner-tags{
+  display:flex;flex-wrap:wrap;gap:0.6rem;
+  margin-bottom:2rem;
+}
+.owner-tags span{
+  background:var(--pink-light);
+  color:var(--text-mid);
+  font-size:0.78rem;padding:0.4rem 1rem;
+  border-radius:2rem;letter-spacing:0.04em;
+}
+.owner-profile-items{display:flex;flex-direction:column;gap:1.4rem;}
+.owner-profile-item{}
+.owner-profile-label{
+  display:block;
+  font-family:'Noto Serif JP',serif;
+  font-size:0.82rem;color:var(--caramel);
+  letter-spacing:0.08em;margin-bottom:0.5rem;
+  padding-bottom:0.4rem;
+  border-bottom:1px solid var(--border);
+}
+.owner-profile-item p{
+  font-size:0.86rem;color:var(--text-mid);
+  line-height:2;
+}
+
 /* ===== VOICE ===== */
 .voice{background:var(--grey-light);}
 .voice-grid{
@@ -555,7 +617,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:3.5rem 2rem 0;
     <ul class="nav-links">
       <li><a href="#about">ローズ蒸しとは</a></li>
       <li><a href="#menu">メニュー</a></li>
-      <li><a href="#voice">お客様の声</a></li>
+      <li><a href="#owner">オーナー紹介</a></li><li><a href="#voice">お客様の声</a></li>
       <li><a href="#flow">ご予約の流れ</a></li>
       <li><a href="#access">アクセス</a></li>
       <li><a href="https://lin.ee/w10o8Cj" target="_blank" class="btn-nav">ご予約</a></li>
@@ -760,6 +822,42 @@ footer{background:#fff;border-top:1px solid var(--border);padding:3.5rem 2rem 0;
   </div>
 </section>
 
+<!-- OWNER -->
+<section id="owner" class="owner">
+  <div class="container">
+    <span class="sec-script">About the Owner</span>
+    <h2 class="sec-title">オーナー紹介</h2>
+    <div class="owner-grid">
+      <div class="owner-img">
+        <img src="owner.jpg" alt="オーナー 繰繰由紀">
+        <div class="owner-name-card">
+          <span class="owner-name-en">YUKI KOKETSU</span>
+          <span class="owner-name-ja">繰繰 由紀</span>
+        </div>
+      </div>
+      <div class="owner-content">
+        <p class="owner-lead">名古屋市天白区在住。夫と愛犬との三人暮らし。<br>40代、毎日があっという間に過ぎていくのを実感しながら、だからこそ「今この時間」を大切にしたいと思っています。</p>
+        <div class="owner-tags">
+          <span>🌺 フラダンス好き</span>
+          <span>🌸 ハワイ渡航歴4回</span>
+          <span>☕ カフェ・空間好き</span>
+          <span>🥩 おひとりさま焼肉OK</span>
+        </div>
+        <div class="owner-profile-items">
+          <div class="owner-profile-item">
+            <span class="owner-profile-label">経歴</span>
+            <p>大手アパレル販売員からカフェ・医療事務などダブルワークを経験。病院勤務がサロン開業のきっかけになりました。さまざまな現場で「接客」と「人の体と心」に向き合い続けてきました。</p>
+          </div>
+          <div class="owner-profile-item">
+            <span class="owner-profile-label">大切にしていること</span>
+            <p>来てくださるお客様が、心からほっとできる空間づくり。「また来たい」と思っていただける40分間を、毎回丁寧にお届けしています。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- VOICE -->
 <section id="voice" class="voice">
   <div class="container">
@@ -859,7 +957,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:3.5rem 2rem 0;
       <ul class="footer-nav">
         <li><a href="#about">ローズ蒸しとは</a></li>
         <li><a href="#menu">メニュー</a></li>
-        <li><a href="#voice">お客様の声</a></li>
+        <li><a href="#owner">オーナー紹介</a></li><li><a href="#voice">お客様の声</a></li>
         <li><a href="#flow">ご予約の流れ</a></li>
         <li><a href="#access">アクセス</a></li>
       </ul>
