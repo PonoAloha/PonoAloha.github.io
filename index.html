@@ -598,8 +598,30 @@ footer{background:#fff;border-top:1px solid var(--border);padding:3.5rem 2rem 0;
 .footer-social svg{width:16px;height:16px;stroke:var(--text-mid);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
 .footer-bottom{border-top:1px solid var(--border);padding:1.4rem 0;font-size:0.7rem;color:var(--text-light);text-align:center;}
 
+/* ===== スマホ用固定予約バー（PCでは非表示） ===== */
+.mobile-cta{display:none;}
+
 /* ===== RESPONSIVE ===== */
 @media(max-width:768px){
+  body{padding-bottom:calc(68px + env(safe-area-inset-bottom));}
+  .mobile-cta{
+    display:block;
+    position:fixed;left:0;right:0;bottom:0;z-index:200;
+    padding:0.55rem 0.9rem calc(0.55rem + env(safe-area-inset-bottom));
+    background:rgba(255,255,255,0.96);
+    border-top:1px solid var(--border);
+    backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  }
+  .mobile-cta-btn{
+    display:flex;align-items:center;justify-content:center;gap:0.4rem;
+    background:var(--caramel);color:#fff;
+    padding:0.95rem 1rem;
+    font-size:0.95rem;letter-spacing:0.08em;
+    text-decoration:none;
+    font-family:'Noto Sans JP',sans-serif;
+    box-shadow:0 4px 16px rgba(192,144,80,0.35);
+  }
+  .mobile-cta-btn:active{background:var(--caramel-dark);}
   .nav-links{display:none;}
   .hero{height:100vh;}
   .features-grid{grid-template-columns:1fr;}
@@ -1017,5 +1039,11 @@ footer{background:#fff;border-top:1px solid var(--border);padding:3.5rem 2rem 0;
   });
 })();
 </script>
+
+<!-- スマホ用固定予約バー -->
+<div class="mobile-cta">
+  <a href="https://lin.ee/w10o8Cj" target="_blank" class="mobile-cta-btn">🌹 LINEでかんたんご予約</a>
+</div>
+
 </body>
 </html>
