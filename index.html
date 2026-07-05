@@ -527,6 +527,25 @@ section{padding:6rem 2rem;}
 }
 .step-desc{font-size:0.84rem;color:var(--text-mid);line-height:1.95;}
 
+/* ===== FAQ ===== */
+.faq{background:var(--grey-light);}
+.faq-list{max-width:760px;margin:0 auto;}
+.faq-item{background:#fff;border:1px solid var(--border);margin-bottom:0.8rem;}
+.faq-item summary{
+  list-style:none;cursor:pointer;
+  display:flex;align-items:center;gap:0.9rem;
+  padding:1.1rem 1.3rem;
+  font-family:'Noto Serif JP',serif;font-size:0.95rem;color:var(--text);
+}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-q{color:var(--caramel);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.25rem;flex-shrink:0;line-height:1;}
+.faq-item summary::after{content:'＋';margin-left:auto;color:var(--caramel);font-family:'Noto Sans JP',sans-serif;}
+.faq-item[open] summary::after{content:'−';}
+.faq-a{padding:0 1.3rem 1.2rem 3.45rem;font-size:0.88rem;color:var(--text-mid);line-height:2;}
+@media(max-width:768px){
+  .faq-a{padding-left:1.3rem;}
+}
+
 /* ===== ACCESS ===== */
 .access{background:var(--white);}
 .access-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
@@ -974,6 +993,25 @@ footer{background:#fff;border-top:1px solid var(--border);padding:3.5rem 2rem 0;
       <div class="flow-step"><div class="step-num">2</div><div class="step-body"><h3 class="step-title">希望日時をお知らせください</h3><p class="step-desc">空き状況は毎月更新しています。1日2組限定の完全予約制です。（10:00〜 / 13:00〜の2部制）</p></div></div>
       <div class="flow-step"><div class="step-num">3</div><div class="step-body"><h3 class="step-title">予約確定・詳細住所をご案内</h3><p class="step-desc">予約確定後に詳しいアクセス方法をLINEにてお伝えします。名古屋市天白区のプライベートサロンです。</p></div></div>
       <div class="flow-step"><div class="step-num">4</div><div class="step-body"><h3 class="step-title">ご来店・施術</h3><p class="step-desc">リラックスしてお越しください。ローズの香りに包まれながら、心と体を整える特別な時間をお楽しみください。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq">
+  <div class="container">
+    <span class="sec-script">Q &amp; A</span>
+    <h2 class="sec-title">よくあるご質問</h2>
+    <div class="faq-list">
+      <details class="faq-item"><summary><span class="faq-q">Q</span>初めてでも大丈夫ですか？</summary><p class="faq-a">ほとんどの方が初めてです。カウンセリングから丁寧にご案内しますのでご安心ください。</p></details>
+      <details class="faq-item"><summary><span class="faq-q">Q</span>恥ずかしくないですか？</summary><p class="faq-a">専用マントを使用し、プライベート空間で行いますのでご安心ください。リラックスして過ごしていただける環境を大切にしています。</p></details>
+      <details class="faq-item"><summary><span class="faq-q">Q</span>サウナが苦手でも大丈夫ですか？</summary><p class="faq-a">大丈夫です。ローズ蒸しは下半身からじんわり温まる優しい温かさが特徴です。</p></details>
+      <details class="faq-item"><summary><span class="faq-q">Q</span>持ち物や服装は？</summary><p class="faq-a">手ぶらでOKです。</p></details>
+      <details class="faq-item"><summary><span class="faq-q">Q</span>メイクはしたままで大丈夫？</summary><p class="faq-a">可能ですが、汗をかく方もいらっしゃるのでナチュラルメイクがおすすめです。</p></details>
+      <details class="faq-item"><summary><span class="faq-q">Q</span>施術時間はどのくらいですか？</summary><p class="faq-a">初回はカウンセリング含めて2時間ほど頂戴しています。</p></details>
+      <details class="faq-item"><summary><span class="faq-q">Q</span>生理中でもできますか？</summary><p class="faq-a">生理中はお控えいただいております。</p></details>
+      <details class="faq-item"><summary><span class="faq-q">Q</span>1回でも変化はありますか？</summary><p class="faq-a">「むくみがとれた」「ぐっすり眠れた」「お通じが出た」などのお声をいただきます。体質改善は続けることで、より実感しやすくなります。</p></details>
+      <details class="faq-item"><summary><span class="faq-q">Q</span>支払い方法は？</summary><p class="faq-a">お支払いは現在、現金のみとさせていただいております。</p></details>
     </div>
   </div>
 </section>
