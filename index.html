@@ -502,6 +502,39 @@ section{padding:6rem 2rem;}
   font-style:italic;
 }
 
+/* ===== SHOP ===== */
+.shop{background:var(--grey-light);}
+.shop-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1.5rem;margin-bottom:1.8rem;
+}
+.shop-card{
+  background:#fff;border:1px solid var(--border);
+  padding:1.8rem 1.5rem;text-align:center;
+  transition:box-shadow 0.3s;
+}
+.shop-card:hover{box-shadow:0 8px 32px rgba(0,0,0,0.06);}
+.shop-tag{
+  display:inline-block;font-size:0.68rem;letter-spacing:0.08em;
+  background:var(--text-light);color:#fff;
+  padding:0.2rem 0.8rem;margin-bottom:1rem;
+}
+.shop-name{font-family:'Noto Serif JP',serif;font-size:0.98rem;line-height:1.6;margin-bottom:0.6rem;}
+.shop-price{font-family:'Cormorant Garamond',serif;font-size:1.7rem;color:var(--caramel);margin-bottom:0.8rem;}
+.shop-desc{font-size:0.8rem;color:var(--text-light);line-height:1.85;}
+.shop-note{
+  background:#fff;border:1px solid var(--border);
+  padding:1.2rem 1.6rem;
+  display:flex;gap:1rem;align-items:flex-start;
+  font-size:0.84rem;color:var(--text-mid);line-height:1.9;
+}
+@media(max-width:768px){
+  .shop-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:480px){
+  .shop-grid{grid-template-columns:1fr;}
+}
+
 /* ===== INSTAGRAM ===== */
 .insta{background:var(--white);}
 .insta-feed{max-width:920px;margin:0 auto 2.2rem;}
@@ -703,6 +736,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:3.5rem 2rem 0;
     <ul class="nav-links">
       <li><a href="#about">ローズ蒸しとは</a></li>
       <li><a href="#menu">メニュー</a></li>
+      <li><a href="#shop">取り扱い商品</a></li>
       <li><a href="#owner">オーナー紹介</a></li><li><a href="#voice">お客様の声</a></li>
       <li><a href="#flow">ご予約の流れ</a></li>
       <li><a href="#access">アクセス</a></li>
@@ -866,6 +900,51 @@ footer{background:#fff;border-top:1px solid var(--border);padding:3.5rem 2rem 0;
         <strong>リピーター割引あり（スタンダードコース）</strong><br>
         ご来店時に次回のご予約をいただくと、<strong>¥5,500（税込）</strong>でお通いいただけます。
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section id="shop" class="shop">
+  <div class="container">
+    <span class="sec-script">Products</span>
+    <h2 class="sec-title">取り扱い商品</h2>
+    <div class="shop-grid">
+      <div class="shop-card">
+        <p class="shop-name">ソフィーズローズオイル 60ml</p>
+        <p class="shop-price">¥31,350</p>
+        <p class="shop-desc">サロンでも使用している、完全無農薬オーガニックのローズオイル。ご自宅でのケアに。</p>
+      </div>
+      <div class="shop-card">
+        <p class="shop-name">ソフィーズローズオイル 20ml</p>
+        <p class="shop-price">¥12,100</p>
+        <p class="shop-desc">お試し・持ち運びにも便利なミニサイズ。</p>
+      </div>
+      <div class="shop-card">
+        <span class="shop-tag">ただいま入荷準備中</span>
+        <p class="shop-name">メディローズオイル</p>
+        <p class="shop-price">¥25,300</p>
+        <p class="shop-desc">サロンでも使用している、完全無農薬オーガニックのローズオイル。</p>
+      </div>
+      <div class="shop-card">
+        <p class="shop-name">ソイローズオイル</p>
+        <p class="shop-price">¥35,200</p>
+        <p class="shop-desc">サロンでも使用している、完全無農薬オーガニックのローズオイル。</p>
+      </div>
+      <div class="shop-card">
+        <p class="shop-name">ローズ＆ローズヒップ カプセル</p>
+        <p class="shop-price">¥7,776</p>
+        <p class="shop-desc">毎日の巡り習慣に。ローズヒップのサプリメントです。</p>
+      </div>
+      <div class="shop-card">
+        <p class="shop-name">ローズ＆イブニングプリムローズ カプセル</p>
+        <p class="shop-price">¥8,424</p>
+        <p class="shop-desc">毎日の巡り習慣に。イブニングプリムローズのサプリメントです。</p>
+      </div>
+    </div>
+    <div class="shop-note">
+      <span>🌹</span>
+      <span>ご購入はご来店時に承っております（お支払いは現金のみ）。ご不明な点はご予約時にお気軽にお尋ねください。</span>
     </div>
   </div>
 </section>
@@ -1079,6 +1158,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:3.5rem 2rem 0;
       <ul class="footer-nav">
         <li><a href="#about">ローズ蒸しとは</a></li>
         <li><a href="#menu">メニュー</a></li>
+        <li><a href="#shop">取り扱い商品</a></li>
         <li><a href="#owner">オーナー紹介</a></li><li><a href="#voice">お客様の声</a></li>
         <li><a href="#flow">ご予約の流れ</a></li>
         <li><a href="#access">アクセス</a></li>
